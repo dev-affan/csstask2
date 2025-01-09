@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: rgb(34, 33, 33);
+        }
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 0 20px;
+            border-radius: 20px;
+            box-shadow: 15px 8px 20px rgb(0, 174, 255);
+        }
+
+        nav h1 {
+            font-size: 36px;
+            text-shadow: 12px 9px 11px;
+            color: rgb(0, 174, 255);
+        }
+
+        nav h1:hover {
+            color: rgb(0, 174, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+
+        .links {
+            display: flex;
+            list-style: none;
+        }
+
+        .links li {
+            margin: 0 8px;
+            border: 2px solid rgb(0, 174, 255);
+            border-radius: 5px;
+            box-shadow: 10px 5px 20px rgb(0, 174, 255);
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+        }
+
+        .links li a:hover {
+            color: rgb(0, 174, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: rgb(0, 174, 255);
+            width: 30%;
+            margin: 130px 35% 0;
+            border-radius: 8px;
+            box-shadow: 10px 5px 15px;
+        }
+
+        div h1 {
+            color: aliceblue;
+            font-size: 20px;
+            padding: 28px 0 0;
+        }
+
+        input {
+            margin-bottom: 20px;
+            color: white;
+            width: 80%;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 174, 255);
+            border-bottom: 2px solid white;
+            cursor: pointer;
+        }
+        input::placeholder , textarea::placeholder {
+            color: white;
+            padding: 3px 5px;
+        }
+        textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            color: white;
+            border: none;
+            outline: none;
+            margin-top: 15px;
+            background-color: rgb(0, 174, 255);
+            border-bottom: 2px solid white;
+            cursor: pointer;
+        }
+        button {
+            background-color: rgb(0, 174, 255);
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px 13px;
+            color: white;
+            box-shadow: 4px 5px 20px;
+        }
+        button:hover {
+            color: rgb(0, 174, 255);
+            box-shadow: 9px 2px 7px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Login & Form Pages</h1>
+        <ul class="links">
+            <li><a href="index.html">First</a></li>
+            <li><a href="sec.html">Second</a></li>
+            <li><a href="third.html">Third</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Send us a message</h1>
+        <input type="text" name="name" id="" placeholder="Name">
+        <br>
+        <input type="email" name="email" id="" placeholder="Email">
+        <br>
+        <input type="tel" name="tel" id="" placeholder="Phone">
+        <br>
+        <textarea name="message" id="" placeholder="Message"></textarea>
+        <br>
+        <button>Send</button>
+    </div>
+</body>
+
+</html>

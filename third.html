@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+    <style>
+        body {
+            background-color: rgb(34, 33, 33);
+        }
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 0 20px;
+            border-radius: 20px;
+            box-shadow: 15px 8px 20px #764ba2;
+        }
+
+        nav h1 {
+            font-size: 36px;
+            text-shadow: 12px 9px 11px;
+            color: #667eea;
+        }
+
+        nav h1:hover {
+            color: #667eea;
+            text-shadow: 15px 10px 15px #764ba2;
+            box-shadow: 10px 5px 12px #764ba2;
+            border-radius: 5px;
+        }
+
+        .links {
+            display: flex;
+            list-style: none;
+        }
+
+        .links li {
+            margin: 0 8px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            box-shadow: 10px 5px 20px #764ba2;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+        }
+
+        .links li a:hover {
+            color: #667eea;
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px #764ba2;
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            margin: 50px 35%;
+            box-shadow: 12px 1px 12px #667eea;
+        }
+
+        .regform h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            margin-bottom: 15px;
+        }
+
+        .form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gender label {
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient( to right, #667eea, #764ba2);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #764ba2, #667eea);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Login & Form Pages</h1>
+        <ul class="links">
+            <li><a href="index.html">First</a></li>
+            <li><a href="sec.html">Second</a></li>
+            <li><a href="third.html">Third</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form class="regform">
+            <h2>Registration</h2>
+            <div class="form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your number" required>
+            </div>
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form">
+                <label>Gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

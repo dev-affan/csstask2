@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(34, 33, 33);
+        }
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 0 20px;
+            border-radius: 20px;
+            box-shadow: 15px 8px 20px rgb(119, 0, 255);
+        }
+
+        nav h1 {
+            font-size: 36px;
+            text-shadow: 12px 9px 11px;
+            color: rgb(119, 0, 255);
+        }
+
+        nav h1:hover {
+            color: rgb(119, 0, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+
+        .links {
+            display: flex;
+            list-style: none;
+        }
+
+        .links li {
+            margin: 0 8px;
+            border: 2px solid rgb(119, 0, 255);
+            border-radius: 5px;
+            box-shadow: 10px 5px 20px rgb(119, 0, 255);
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+        }
+
+        .links li a:hover {
+            color: rgb(119, 0, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+
+        div {
+            background-color: rgb(115, 12, 231);
+            width: 35%;
+            margin: 70px 35% 0;
+            border-radius: 15px;
+            box-shadow: 13px 5px 18px rgb(153, 0, 255);
+            max-width: 400px;
+
+        }
+        div h1 {
+            text-align: center;
+            text-shadow: 9px 2px 11px;
+        }
+        div h1:hover {
+            text-shadow: 15px 10px 15px;
+            
+        }
+        form {
+            padding: 20px;
+        }
+        input {
+            margin: 11px 20px;
+            padding: 5px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            width: 80%;
+            padding: 15px;
+            font-weight: bold;
+        }
+        input::placeholder {
+            padding: 0px 10px;
+            font-weight: bold;
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 25px 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Login & Form Pages</h1>
+        <ul class="links">
+            <li><a href="index.html">First</a></li>
+            <li><a href="sec.html">Second</a></li>
+            <li><a href="third.html">Third</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Form</h1>
+        <form action="">
+            <label for="name">
+                Name: 
+                <input type="text" id="name" placeholder="Affan">
+            </label>
+            <br>
+            <label for="email">Email:
+                <br>
+                <input type="email" id="email" placeholder="Email">
+            </label><br>
+            <label for="pass">
+                Password:
+                <br><input type="password" name="pass" id="pass" placeholder="Password">
+            </label><br>
+            <label for="cpass">Confirm Password: <br>
+            <input type="password" name="cpass" id="cpass" placeholder="Confirm Password"></label>
+        </form>
+    </div>
+</body>
+</html>
