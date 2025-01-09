@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(82, 133, 180);
+            padding: 0 20px;
+            border-radius: 20px;
+            box-shadow: 15px 8px 20px rgb(0, 140, 255);
+        }
+
+        nav h1 {
+            font-size: 36px;
+            text-shadow: 12px 9px 11px;
+            color: rgb(255, 255, 255);
+        }
+
+        nav h1:hover {
+            color: rgb(0, 174, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+
+        .links {
+            display: flex;
+            list-style: none;
+        }
+
+        .links li {
+            margin: 0 8px;
+            border: 2px solid rgb(0, 174, 255);
+            border-radius: 5px;
+            box-shadow: 10px 5px 20px rgb(0, 174, 255);
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+        }
+
+        .links li a:hover {
+            color: rgb(255, 255, 255);
+            text-shadow: 15px 10px 15px;
+            box-shadow: 10px 5px 12px;
+            border-radius: 5px;
+        }
+        .contain {
+            background-color: rgb(82, 133, 180);
+            padding: 30px 35px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            margin: 40px 35%;
+            box-shadow: 11px 2px 12px rgb(0, 174, 255);
+        }
+        .regform h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .form {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .form input {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            width: 60%;
+            font-weight: bold;
+        }
+        .form label {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form label:hover {
+            color: rgb(0, 174, 255);
+            text-shadow: 15px 5px 10px rgb(0, 174, 255); 
+            box-shadow: 10px 5px 10px;
+        }
+        button {
+            border-radius: 35px;
+            border: none;
+            margin: 5px;
+            padding: 15px 25px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: rgb(0, 174, 255);
+            color: white;
+            box-shadow: 9px 2px 11px rgb(0, 81, 255);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Login & Form Pages</h1>
+        <ul class="links">
+            <li><a href="index.html">First</a></li>
+            <li><a href="sec.html">Second</a></li>
+            <li><a href="third.html">Third</a></li>
+            <li><a href="fourth.html">Fourth</a></li>
+        </ul>
+    </nav>
+    <div class="contain">
+        <form class="regform">
+            <h1>Registration Form</h1>
+            <div class="form">
+                <label for="name">First Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form">
+                <label for="last">Last Name:</label>
+                <input type="text" id="last">
+            </div>
+            <div class="form">
+                <label for="nick">Nick Name:</label>
+                <input type="text" id="nick">
+            </div>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form">
+                <label for="pass">Password: </label>
+                <input type="password" id="pass">
+            </div>
+            <div class="form">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+            </div>
+            <!-- <div class="form">
+                <label for="male"><input type="radio" id="male">Male</label>
+                <label for="fmale"><input type="radio" id="fmale">Female</label>
+            </div> -->
+            <div class="form">
+                <label for="tel">Mobile</label>
+                <input type="tel" id="tel">
+            </div>
+            <div class="form">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+    </div>
+</body>
+</html>
